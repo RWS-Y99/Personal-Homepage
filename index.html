@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main">
+    <div class="flex-container">
+        <div id="grad-left"></div>
+        <div class="head">
+            <h3>Ryan S - Student</h3>
+        </div>
+        <div id="grad-right"></div>
+    </div>
+
+    <div class="flex-container">
+        <div id="pDesc" class="box">
+            <p></p>
+            <ul id="p-Desc-List">
+                <li class="p-Desc-List-Item">Student at YU</li>
+            </ul>
+        </div>
+        <div id="pImg" class="box">
+            <img id="pfp" src="Images/pfp.png" alt="Profile Image">
+        </div>
+    </div>
+    <div class="content">
+        <section id="skills" class="content-box">
+            <h4 class="section-heading1">Skills</h4>
+            <section>
+                <h5 class="content-header">Object Oriented Programming</h5>
+                <ul class="compact-list">
+                    <li>Strong understanding of object oriented design principles (SOLID), as well as skills with various OOP design patterns.</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+            <section>
+                <h5 class="content-header">HTML & CSS</h5>
+                <ul class="compact-list">
+                    <li>Advanced understanding of HTML and CSS with several individual and collaborative projects </li>
+                </ul>
+            </section>
+            <section>
+                <h5 class="content-header">JS & PHP</h5>
+                <ul class="compact-list">
+                    <li>Understanding of JS, JQuery, and AJAX</li>
+                    <li>Novice with PHP and SQL</li>
+                </ul>
+            </section>
+        </section>
+        <section id="experience" class="content-box">
+            <h4 class="section-heading1">Experience</h4>
+        
+            <p class="section-p1">Through my education and early career in the information technology field I have worked on various projects both individually and with small development teams with varying results, including:</p>
+            <ul class="compact-list">
+                <li>Successful projects in which communication with coworkers played an integral role in the outcome of our work</li>
+                <li>Failed projects in which team members collectively determined errors in development to better prepare for future projects</li>
+                <li>Individual tasks and personal projects which required self-guidance and learning to overcome challenges in development</li>
+            </ul>
+        </section>
+        <section id="projects" class="content-box">
+            <h4 class="section-heading1">Projects</h4>
+            <p class="section-p1">Several projects I have worked on include a virtual store front for a retail company selling cutting boards, a smart home system developed with Java, and sign-up and login portal for a nutrition website based in PHP and MySQL. These projects can be accessed from the links below. 
+                </p>
+            <ul class="compact-list">
+                <li><a class="list-link-no-dec" href="#">Store Front</a></li>
+                <li><a class="list-link-no-dec" href="#">Smart Home System</a></li>
+                <li><a class="list-link-no-dec" href="#">Nutrition Website</li>
+            </ul>
+        </section>
+    </div>
+    <div class="contact-personal">
+        <h3 id="contact">Contact Me!</h3>
+        <a href="#" class="email">rs________@email.com</a>
+        <div class="socials">
+            <a href="#"><img src="Images/twitter.png" alt="Twitter (X?)"></a>
+            <a href="#"><img src="Images/linkedin.png" alt="Linkedin"></a>
+            <a href="#"><img src="Images/facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <div class="contact-header"><a href="#popupForm" id="cButton">Contact Form</a></div>
+        <div id="popupForm" class="container">
+            <form id="conForm" action="#">
+                <a href="#" class="closeCon">&times;</a>
+                <label for="firstName">First Name</label><br>
+                <input type="text" id="firstName" placeholder="Your first name..."><br><br>
+                <label  id="lastN" for="lastName">Last Name</label><br>
+                <input type="text" id="lastName" placeholder="Your surname..."> <br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="someone@someplace.com" style="width: 250px;">
+                <br><br>
+                <label for="subjectField">Subject</label>
+                <textarea name="subject" id="subjectField" placeholder="The reason for contact..."></textarea>
+                <input id="submitButton" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

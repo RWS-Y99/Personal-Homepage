@@ -1,0 +1,258 @@
+body {
+    background-color: #ffffed;
+    font: 1em sans-serif;
+}
+
+.main {
+    /*background-color: grey; /*#ffffed*/
+    height: auto;
+    width: auto;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.flex-container {
+    height: fit-content;
+    width: auto;
+    display: flex;
+    align-items: stretch;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    justify-content: center;
+}
+
+.head {
+    background-color: #dac0a7;
+    height: fit-content;
+    width: 50%;
+    padding: 0; 
+    text-align: center;  
+    margin: auto;
+    color: #158fab;
+}
+
+#grad-left {  
+    width: 25%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(218,192,167,1));
+}
+#grad-right {
+    width: 25%;
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(218,192,167,1));
+}
+
+.box {
+    min-height: 100%;
+    margin: 5px;
+    border: 2px solid #158fab;
+   }
+ 
+#pImg {
+   /*fit content*/
+    background-color: white;/*whitesmoke;*/
+    width: fit-content;
+    margin-left: 0; 
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#pfp {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#pDesc {
+    background-color: #dac0a7;
+    width: 60%;
+    margin-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#p-Desc-List {
+    list-style-position: inside;
+}
+
+.p-Desc-List-Item {
+    padding-bottom: 5px;
+}
+
+.content {
+    background-color: #158fab;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: justify;
+    justify-content: center;
+    display: inline-block;    
+}
+
+.content-header {
+    text-align: left;
+    margin-left: 40px;
+    padding-bottom: 0px;
+    margin-bottom:3px;
+}
+
+.content-box {
+    margin: 10px auto;
+    background-color: #dac0a7;
+    width: auto;
+    max-width: 75%;
+    height: fit-content;  
+}
+
+#skills {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+/* #experience {} */
+
+#projects {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.section-heading1 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.compact-list li {
+    padding: 2px 0px;
+}
+
+.section-p1 {
+    padding: 0px 10px 10px;
+    margin: 0px 5px;
+}
+
+.compact-list {
+    margin: auto 25px;
+    padding-bottom: 20px;
+    list-style-position: inside;
+}
+
+.list-link-no-dec {
+    text-decoration: none;
+    color: black;
+}
+
+.list-link-no-dec:hover {
+    cursor: pointer;
+    color: #158fab;
+}
+
+.contact-form { margin-top: 50px;}
+
+#cButton {
+    background-color: #e2e2e2;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px black;
+    text-decoration: none;
+    color: black;
+}
+
+#cButton:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.container .closeCon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #158fab;
+}
+
+.container .closeCon:hover {
+    color: #33adc9;
+    text-shadow: 0px 0px 20px;
+}
+
+.contact-header {
+    position: fixed;
+    bottom: 1px;
+    margin-bottom: 15px;
+    max-width: fit-content;
+    max-height: fit-content;
+    font-size: small;
+}
+
+#subjectField {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;}
+
+.contact-personal {
+    display: flex; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #dac0a7;
+    max-width: fit-content;
+    border-radius: 25px;
+    padding: 2px 10px 2px 10px;
+}
+#contact {
+    font-size: small;
+}  
+.email {
+    margin: 10px;
+}
+
+.container {
+    position: fixed;
+    bottom: 1px;
+    border-radius: 5px;
+    min-width: 50%;
+    background-color: #aaa;
+    box-shadow: 2px 2px black;
+    border: 2px solid black;
+    padding: 20px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.container:target {
+    visibility: visible;
+    pointer-events: auto;
+}
+.container:target .contact-header {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+#submitButton {
+    border-radius: 20px/30px;
+    box-shadow: 1px 1px black;
+    padding: 7.5px 30px;
+    background-color: #158fab;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+#submitButton:hover { 
+    background-color: #33adc9;
+    color: black;
+    cursor: pointer;
+}
+
+.socials img {
+    width: 40px; 
+    border-radius: 25px;
+}
